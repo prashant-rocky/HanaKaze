@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+h1,
+h2 {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 00;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+h3 {
+    font-family: "Story Script", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navbar {
+    background-color: maroon;
+}
+
+.mainColor {
+    color: maroon;
+}
+
+.tabs {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bolder;
+}
+
+.myBtn {
+    background-color: maroon !important;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+.btnHover {
+    border: 1px solid maroon !important;
+}
+
+.btnHover:hover {
+    background-color: maroon !important;
+    color: white !important;
+}
+
+.footer p,
+.footer a {
+    color: white;
+}
+
+.footer .social-media i {
+    margin-right: 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.carousel-item {
+    padding-top: 220px;
+}
+
+/* swiper */
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+.productImg {
+    border-radius: 50%;
+}
+
+/* opening time card */
+.hours-card {
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    background: linear-gradient(135deg, maroon, #f79050);
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.hours-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.hours-card h3 {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.hours-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hours-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    transition: background 0.3s ease;
+}
+
+.hours-list li:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.day {
+    font-weight: 600;
+}
+
+.closed {
+    color: #ff6b6b;
+    font-weight: 700;
+}
+
+/* for contact us */
+.contact-section h2,
+.contact-section h3 {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.contact-card {
+    background: linear-gradient(135deg, maroon, #f79050);
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-8px);
+}
+
+.form-card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.form-card:hover {
+    transform: translateY(-5px);
+}
+
+.btn-custom {
+    background: linear-gradient(135deg, maroon, #f79050);
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 25px;
+    transition: 0.3s;
+}
+
+.btn-custom:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+/* Thank You Card */
+.thank-you-card {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.thank-you-card h4 {
+    color: maroon;
+    font-weight: 700;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+}
+/* for single blog */
+.blog-hero {
+      background: url('https://images.unsplash.com/photo-1604908176819-1d5d295df1c6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+      border-radius: 0 0 25px 25px;
+    }
+    .blog-hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+    }
+    .meta {
+      font-size: 14px;
+      color: #ddd;
+      margin-top: 10px;
+    }
+    .blog-content {
+      font-size: 17px;
+      line-height: 1.9;
+      color: #333;
+      margin-bottom: 40px;
+    }
+    .blog-content p {
+      margin-bottom: 20px;
+    }
+    .author-box {
+      background: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0px 6px 20px rgba(0,0,0,0.1);
+      margin-bottom: 50px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .author-box img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 3px solid maroon;
+    }
+    .comment-card {
+      background: #f4f4f4;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+    .comment-card h6 {
+      font-weight: bold;
+    }
+    .comment-form textarea {
+      resize: none;
+    }
+    .btn-custom {
+      background: maroon;
+      color: #fff;
+      border-radius: 30px;
+      padding: 10px 25px;
+    }
+    .btn-custom:hover {
+      background: #e55a00;
+    }
+    .success-message {
+      display: none;
+      margin-top: 15px;
+      padding: 12px;
+      border-radius: 10px;
+      background: #d4edda;
+      color: #155724;
+      font-weight: 500;
+    }
+
+@media (max-width: 768px) {
+    .hours-card {
+        position: static;
+        margin: 20px auto;
+        /* centers card nicely */
+        width: 100%;
+        /* make it responsive */
+        max-width: 95%;
+        /* prevent touching edges */
+    }
+}
+/* ===========================
+   BLOG SECTION STYLING
+=========================== */
+.blog-section {
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #333;
+}
+
+/* Heading */
+.blog-section h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #b24c32;
+    margin-bottom: 20px;
+}
+
+/* Image */
+.blog-section .blog-img,
+.blog-section img {
+    border-radius: 12px;
+    max-height: 420px;
+    object-fit: cover;
+}
+
+/* Paragraph text */
+.blog-section p {
+    font-size: 17px;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* Add soft shadow to image */
+.blog-section img.shadow {
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .blog-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .blog-section p {
+        font-size: 16px;
+    }
+}
